@@ -1,3 +1,46 @@
+:root{
+    /* Color Variables Start Here */
+    --color-black: #111;
+    --color-white: #fff;
+    --bg-dark: #13aa6b;
+    --text-green:#13aa6b;
+    --bg-light: #f9f9f9;
+    --bg-white: #fff;
+    /* Color Variables End Here */
+
+    /* Font Family Varibles Start Here */
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    /* Font Family Varibles End Here */
+
+    /* Font Size Variables Start Here */
+    --fs14: 14px;
+    --fs16: 16px;
+    --fs18: 18px;
+    --fs20: 20px;
+    --fs24: 24px;
+    --fs28: 28px;
+    --fs36: 36px;
+    --fs48: 48px;
+    /* Font Size Variables End Here */
+
+    /* Font Weight Variables Start Here */
+    --fw-400:400;
+    --fw-500:500;
+    --fw-600:600;
+    --fw-700:700;
+    --fw-800:800;
+    /* Font Weight Variables End Here */
+
+    /* Border Variables Start Here */
+    --border1: 1px solid #ddd;
+    /* Border Variables End Here */
+
+    /* Border Radius Variables Start Here */
+    --border-radius-5: 5px;
+    --border-radius-10: 10px;
+    /* Border Radius Variables End Here */
+}
 @media screen and (max-width:767px){
     .d_grid_images_row{
         column-count: 2;
@@ -11,11 +54,14 @@
     }
 }
 @media screen and (max-width:575px){
-    .d_grid_images_row{
-        column-count: 1;
-    }
     .navigation .logo_text{
         padding-block: 20px;
+    }
+    .main_heading{
+        font-size: var(--fs16);
+    }
+    .d_grid_images_row{
+        column-count: 1;
     }
     .footer_links {
         display: block;
