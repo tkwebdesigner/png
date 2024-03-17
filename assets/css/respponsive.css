@@ -41,6 +41,11 @@
     --border-radius-10: 10px;
     /* Border Radius Variables End Here */
 }
+@media screen and (max-width:991px){
+    .main_heading{
+        font-size: var(--fs28);
+    }
+}
 @media screen and (max-width:767px){
     .d_grid_images_row{
         column-count: 2;
@@ -52,13 +57,16 @@
     .navigation .logo_text{
         padding-block: 40px;
     }
+    .main_heading{
+        font-size: var(--fs24);
+    }
 }
 @media screen and (max-width:575px){
     .navigation .logo_text{
         padding-block: 20px;
     }
     .main_heading{
-        font-size: var(--fs16);
+        font-size: var(--fs20);
     }
     .d_grid_images_row{
         column-count: 1;
