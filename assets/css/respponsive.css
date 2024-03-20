@@ -46,6 +46,60 @@
         font-size: var(--fs28);
     }
 }
+@media screen and (max-width: 768px) {
+    .navigation{
+        flex-direction: row-reverse;
+        padding: 0 10px;
+    }
+    .main-nav{
+        display: block;
+        width: 100%;
+        position: absolute;
+        transform: translateX(0);
+        top: 0px;
+        left: 0;
+        background-color: var(--bg-white);
+        z-index: 1000;
+        width: 230px;
+        height: 100%;
+        box-shadow: 0 3px 4px 0 rgba(0,0,0,0.1);
+        opacity: 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+        -webkit-transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+        -moz-transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+        -ms-transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+        -o-transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+    .main-nav.active {
+        transform: translateX(0);
+        opacity: 1; /* Show the menu with opacity */
+    }
+    .nav-links {
+        text-align: start;
+        padding: 10px;
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #ddd;
+        font-weight: var(--fw-500);
+    }
+    .navbar-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: var(--bg-white);
+    }
+    .navbar-toggle .toggle_icon{
+        width: 24px;
+        height: auto;
+    }
+}
 @media screen and (max-width:767px){
     .d_grid_images_row{
         column-count: 2;
@@ -71,13 +125,9 @@
     .d_grid_images_row{
         column-count: 1;
     }
-    .footer_links {
-        display: block;
-        column-count: 2;
-        width: 100%;
-    }
-    .footer_links li{
-        margin-bottom: 12px;
+    .copyright {
+        flex-direction: column;
+        gap: 15px;
     }
 }
 @media screen and (min-width:768px){
