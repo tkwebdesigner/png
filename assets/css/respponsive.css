@@ -151,15 +151,6 @@
         break-inside: avoid;
         page-break-inside: avoid;
     }
-    .d_grid_images_row{
-        column-count: 3;
-    }
-    .detail{
-        flex-direction: column;
-    }
-    .detail_image, .right_sidebar{
-        width: 100%;
-    }
 }
 @media screen and (max-width:320px){
     .main_images_section{
