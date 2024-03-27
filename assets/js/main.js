@@ -53,30 +53,30 @@ window.addEventListener('scroll', function () {
 });
 
 // Disable context menu
-// document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 // Disable specific keys
-// document.onkeydown = function (e) {
-//     // Disable F12 key
-//     if (e.key === "F12" || (e.key === "F12" && e.ctrlKey === true) || (e.key === "F12" && e.shiftKey === true) || (e.key === "F12" && e.altKey === true) || (e.key === "F12" && e.metaKey === true)) {
-//         return false;
-//     }
+document.onkeydown = function (e) {
+    // Disable F12 key
+    if (e.key === "F12" || (e.key === "F12" && e.ctrlKey === true) || (e.key === "F12" && e.shiftKey === true) || (e.key === "F12" && e.altKey === true) || (e.key === "F12" && e.metaKey === true)) {
+        return false;
+    }
 
-//     // Disable Ctrl+Shift+I (inspect element)
-//     if (e.ctrlKey && e.shiftKey && e.key === "I") {
-//         return false;
-//     }
+    // Disable Ctrl+Shift+I (inspect element)
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+        return false;
+    }
 
-//     // Disable Ctrl+Shift+J (inspect element)
-//     if (e.ctrlKey && e.shiftKey && e.key === "J") {
-//         return false;
-//     }
+    // Disable Ctrl+Shift+J (inspect element)
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+        return false;
+    }
 
-//     // Disable Ctrl+U (view page source)
-//     if (e.ctrlKey && e.key === "U") {
-//         return false;
-//     }
-// }
+    // Disable Ctrl+U (view page source)
+    if (e.ctrlKey && e.key === "U") {
+        return false;
+    }
+}
 
 window.addEventListener('scroll', function() {
   var scrollTopBtn = document.getElementById('scrollTopBtn');
