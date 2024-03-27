@@ -99,6 +99,12 @@
         width: 24px;
         height: auto;
     }
+    .detail{
+        flex-direction: column;
+    }
+    .detail_image, .right_sidebar{
+        width: 100%;
+    }
 }
 @media screen and (max-width:767px){
     .d_grid_images_row{
@@ -129,6 +135,9 @@
         flex-direction: column;
         gap: 15px;
     }
+    #scrollTopBtn{
+        bottom: 75px;
+    }
 }
 @media screen and (min-width:768px){
     .d_grid_images_row .d_grid_image_box{
@@ -144,6 +153,25 @@
     }
     .d_grid_images_row{
         column-count: 3;
+    }
+    .detail{
+        flex-direction: column;
+    }
+    .detail_image, .right_sidebar{
+        width: 100%;
+    }
+}
+@media screen and (max-width:320px){
+    .main_images_section{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .info_list div{
+        padding: 10px 0;
+    }
+    .dld_btn{
+        padding: 10px 0;
+        font-size: var(--fs14);
     }
 }
 @media screen and (min-width:1024px){
